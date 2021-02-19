@@ -9,9 +9,9 @@ $errors = array();
 
 // connect to the database
 define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', 'PuneethReddy');
+   define('DB_USERNAME', 'Ajit');
    define('DB_PASSWORD', '');
-   define('DB_DATABASE', 'ecommerece');
+   define('DB_DATABASE', 'iwasp');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
@@ -33,7 +33,7 @@ if (isset($_POST['reg_user'])) {
   if ($password_1 != $password_2) {
 	array_push($errors, "The two passwords do not match");
   }
-
+//test..
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
   $user_check_query = "SELECT * FROM register WHERE Name='$username' OR email='$email' LIMIT 1";
