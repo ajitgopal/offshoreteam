@@ -1,4 +1,6 @@
 <?php
+//The config file changes here
+
 include "db.php";
 
 session_start();
