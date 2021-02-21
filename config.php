@@ -14,8 +14,11 @@ define('DB_SERVER', 'localhost');
    define('DB_DATABASE', 'iwasp');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 if (!$db) {
-    die("Connection failed: " . mysqli_connect_error());
+    //This is an issue 
+	die("Connection failed: Try after some time" . mysqli_connect_error());
 }
+
+
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
