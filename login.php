@@ -1,5 +1,5 @@
 <?php
-//The config file changes here
+//The config file changes here f
 
 include "db.php";
 
