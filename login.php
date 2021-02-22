@@ -22,7 +22,7 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
 		$ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR')
 		
 		//we have created a cookie in login_form.php page so if that cookie is available means user is not login
-        
+        // test that can be recorded.
 	//if user record is available in database then $count will be equal to 1
 	if($count == 1){
 		   	
