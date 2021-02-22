@@ -8,7 +8,7 @@ if (isset($_POST["login_user_with_product"])) {
 	//here we are converting array into json format because array cannot be store in cookie
 	$json_e = json_encode($product_list);
 	//here we are creating cookie and name of cookie is product_list
-	setcookie("product_list",$json_e,strtotime("+1 day"),"/","","",TRUE);
+	setcookie("product_list_200",$json_e,strtotime("+1 day"),"/","","",TRUE);
 
 }
 ?>
@@ -30,7 +30,7 @@ if (isset($_POST["login_user_with_product"])) {
 								<form onsubmit="return false" id="login" class="login100-form ">
 									<div class="billing-details jumbotron">
                                     <div class="section-title">
-                                        <h2 class="login100-form-title p-b-49" >Login Here</h2>
+                                        <h2 class="login100-form-title p-b-49" >Login All</h2>
                                     </div>
                                    
                                     

@@ -20,11 +20,13 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
 		$_SESSION["name"] = $row["first_name"];
 		$ip_add = getenv("REMOTE_ADDR");
 		$ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR')
+		//This can be done later
+		
 		
 		//we have created a cookie in login_form.php page so if that cookie is available means user is not login
         // test that can be recorded.
 	//if user record is available in database then $count will be equal to 1
-	if($count == 1){
+	if($count == 10){
 		   	
 			if (isset($_COOKIE["product_list"])) {
 				$p_list = stripcslashes($_COOKIE["product_list"]);
